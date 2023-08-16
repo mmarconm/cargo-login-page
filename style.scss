@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;300;400&family=Barlow:wght@200;400&family=Chivo:wght@100;400&family=DM+Sans&family=Exo&family=Fira+Sans+Condensed:wght@300;400&family=IBM+Plex+Serif:wght@300;400&family=Inconsolata:wght@300;400&family=Josefin+Sans:wght@300&family=Karla:wght@200;400&family=Lato:wght@300;400&family=Maven+Pro&family=Montserrat&family=Noto+Sans+JP:wght@100;400&family=Noto+Sans+Nandinagari&family=Open+Sans:wght@300;400&family=Pathway+Extreme:wght@300;400&family=Poppins:wght@200;400&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;0,900;1,100;1,300&family=Signika+Negative:wght@300;400&family=Wix+Madefor+Text&display=swap");
+
+// font-family: 'Asap Condensed', sans-serif;
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Chivo', sans-serif;
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Exo', sans-serif;
+// font-family: 'Fira Sans Condensed', sans-serif;
+// font-family: 'IBM Plex Serif', serif;
+// font-family: 'Inconsolata', monospace;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Karla', sans-serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Maven Pro', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Noto Sans Nandinagari', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Pathway Extreme', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Signika Negative', sans-serif;
+// font-family: 'Wix Madefor Text', sans-serif;
+
+// #######################################
+// ###### Variables
+// #######################################
+
+:root {
+  --ff: "Roboto", sans-serif;
+  --ff-title: "Josefin Sans", sans-serif;
+}
+
+// #######################################
+// ###### Container
+// #######################################
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--ff);
+
+  .left,
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    background-color: #fff;
+    .form {
+      display: flex;
+      position: relative;
+      flex: 0 1 380px;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+
+      &__header {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.4rem;
+        padding: 1rem;
+        color: #6c63ffff;
+        // background-color: #ddd;
+        h3 {
+          font-weight: bold;
+          font-size: 3rem;
+          font-family: var(--ff);
+          text-align: center;
+        }
+        p {
+          font-size: 1rem;
+          font-family: "Roboto";
+          text-align: center;
+        }
+      }
+
+      &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &-group {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          font-family: var(--ff);
+          &-label {
+            font-size: 0.9rem;
+          }
+          &-text {
+            position: relative;
+            i {
+              position: absolute;
+              top: 25%;
+              left: 10px;
+              scale: 1.5;
+              color: #6c63ffff;
+            }
+            input {
+              border: none;
+              border-radius: 100vh;
+              background-color: rgb(228, 227, 236);
+              padding: 0.6rem 20px 0.6rem 35px;
+              width: 100%;
+              color: #5c5c5c;
+              &::placeholder {
+                padding: 0 20px;
+              }
+              &:focus {
+                outline: 1px solid #6c63ffff;
+              }
+            }
+          }
+        }
+
+        &-check {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.9rem;
+
+          a {
+            color: #402c8a;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          &-sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5em;
+
+            input[type="checkbox"] {
+              transform: scale(1.3);
+              background-color: #402c8a;
+              width: 1.15em;
+              height: 1.15em;
+              color: #402c8a;
+              &:checked {
+                background-color: #402c8a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    background-color: #ddd;
+  }
+}
+
+.logo {
+  background-color: transparent;
+  width: 400px;
+}
+
+.btn {
+  box-shadow: 5px 5px 15px 0 #b3b3b3;
+  border: none;
+  border-radius: 100vh;
+  background-color: #6c63ffff;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-family: var(--ff);
+
+  &:active {
+    background-color: #333;
+  }
+}
+
+.btn-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 5px 5px 15px 0 #b3b3b3;
+  border: 1px solid #a8a8a8;
+  background-color: #fff;
+  color: #333;
+
+  &:active {
+    background-color: #ebebeb;
+  }
+
+  svg,
+  i {
+    scale: 1.7;
+  }
+}
+
+.account {
+  font-size: 0.9rem;
+  text-align: center;
+  a {
+    color: #6c63ffff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.google {
+  width: 20px;
+}
+
+@media (width < 800px) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

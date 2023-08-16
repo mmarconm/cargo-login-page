@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Focvs</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- LEFT COL -->
+      <div class="left">
+        <!-- FORM -->
+        <form class="form" action="" method="POST">
+          <!-- HEADERS -->
+          <header class="form__header">
+            <h3>SISCARGO</h3>
+            <p>Gerenciamento de transportes e cargas.</p>
+          </header>
+          <!-- END HEADERS -->
+          <!-- MAIN -->
+          <main class="form__section">
+            <!-- SECTION -->
+            <section class="form__section-group">
+              <label class="form__section-group-label" for="email">Email</label>
+              <div class="form__section-group-text">
+                <input
+                  type="email"
+                  required
+                  placeholder="Digite seu email"
+                  name="email"
+                  class="form-input"
+                />
+                <i id="mail-icon" class="bx bxs-envelope"></i>
+              </div>
+            </section>
+            <!-- SECTION -->
+            <section class="form__section-group">
+              <label class="form__section-group-label" for="email">Senha</label>
+              <div class="form__section-group-text">
+                <input
+                  type="password"
+                  required
+                  placeholder="Digite seu senha"
+                  name="password"
+                  class="form-input"
+                />
+                <i id="eye-icon" class="bx bxs-hide"></i>
+              </div>
+            </section>
+            <!-- SECTION -->
+            <section class="form__section-check">
+              <div class="form__section-check-sign">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember">Lembrar por 30 dias.</label>
+              </div>
+              <a href="#">Esqueceu a senha.</a>
+            </section>
+            <!-- END SECTION -->
+            <!-- BUTTONS -->
+            <button type="submit" class="btn" type="button">Acessar</button>
+            <button class="btn btn-google" type="button">
+              <img src="./assets/img/google-logo.svg" alt="" class="google" />
+              <span>Acessar com o Google</span>
+            </button>
+            <!--  -->
+          </main>
+          <!-- END MAIN -->
+          <span class="account">Não tem conta? <a href="#">Crie uma</a></span>
+        </form>
+        <!-- END FORM -->
+      </div>
+      <!-- END LEFT COL -->
+      <!-- RIGHT COL -->
+      <div class="right">
+        <img class="logo" src="./assets/img/cargo-logo.svg" />
+      </div>
+      <!-- END RIGHT COL -->
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
